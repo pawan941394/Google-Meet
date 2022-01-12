@@ -1,0 +1,294 @@
+body {
+    background-color: #000000 !important;
+}
+
+.navbar .joinButton {
+    padding: 8px;
+    border: 2px solid #950101;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: #950101;
+    border-radius: 11px;
+    font-weight: 700;
+}
+
+.navbar .joinButton::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate( 45deg);
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+    background: #950101;
+    color: whitesmoke;
+}
+
+.navbar .joinButton:hover::before {
+    width: 105%;
+}
+
+.navbar .joinButton:hover {
+    color: whitesmoke;
+}
+
+.cssbuttons-io-button {
+    background: #950101;
+    color: white;
+    font-family: inherit;
+    padding: 0.35em;
+    padding-left: 1.2em;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 0.9em;
+    border: none;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0 0 1.6em -0.6em #950101;
+    overflow: hidden;
+    position: relative;
+    height: 2.8em;
+    padding-right: 3.3em;
+}
+
+.cssbuttons-io-button .icon {
+    background: white;
+    margin-left: 1em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.2em;
+    width: 2.2em;
+    border-radius: 0.7em;
+    box-shadow: 0.1em 0.1em 0.6em 0.2em #7b52b9;
+    right: 0.3em;
+    transition: all 0.3s;
+}
+
+.cssbuttons-io-button:hover .icon {
+    width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+    width: 1.1em;
+    transition: transform 0.3s;
+    color: #7b52b9;
+}
+
+.cssbuttons-io-button:hover .icon svg {
+    transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+    transform: scale(0.95);
+}
+
+.css-3d-text {
+    font-size: 50px;
+    color: #950101;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 0px 0px 0 #950101, 1px 1px 0 #950101, 2px 2px 0 #950101, 3px 3px 0 #950101, 4px 4px 0 rgb(61 20 123), 5px 5px 4px rgb(0 0 0 / 54%), 5px 5px 1px rgb(0 0 0 / 50%), 0px 0px 4px rgb(0 0 0 / 20%);
+    text-decoration: none;
+    margin-top: -9px;
+}
+
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    color: red;
+    padding-top: 4px;
+}
+
+.navbar-toggler {
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    transition: box-shadow .15s ease-in-out;
+    color: black !important;
+    border: 1px solid red !important;
+}
+
+
+/* crausal  */
+
+.carousel {
+    position: relative;
+    width: 25%;
+}
+
+.mainBox {
+    display: flex;
+    max-width: 90%;
+    margin: auto;
+    margin-top: 6%;
+}
+
+.leftSideBox {
+    max-width: 65%;
+    color: #FF0000;
+    background: transparent;
+}
+
+.leftSideBox p {
+    color: #950101;
+}
+
+.carousel-caption {
+    position: initial;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 5px;
+    border-radius: 28px;
+}
+
+.ButtonContent {
+    display: flex;
+}
+
+.linkBox {
+    border: 1px solid #950101;
+    border-radius: 0.9em;
+    width: 332px;
+    background: transparent;
+    color: white;
+    font-weight: 100;
+}
+
+.joinButton {
+    background: transparent;
+    /* max-width: 39%; */
+    color: white;
+}
+
+.joinButton .form-control:focus {
+    border: none;
+    box-shadow: none;
+}
+
+.input-group-text {
+    border: 1px solid #950101;
+    background: transparent;
+    border-right: none;
+}
+
+.mainBox h6 {
+    margin: 0px 23px;
+    margin-top: 12px;
+}
+
+.mainBox .JoinButton a {
+    text-decoration: none;
+    color: #950101;
+}
+
+.mainBox form {
+    display: flex;
+}
+
+
+/* #JoinButoon {
+    display: none;
+} */
+
+
+/* modal  */
+
+.modal-header .btn-close {
+    padding: 0.5rem 0.5rem;
+    margin: -0.5rem -0.5rem -0.5rem auto;
+    color: white;
+    background: transparent;
+}
+
+.modal-content {
+    background: transparent;
+}
+
+.modal-header {
+    border: none;
+}
+
+@media only screen and (max-width:991px) {
+    .cssbuttons-io-button,
+    .navbar button {
+        margin-top: 2%;
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width:800px) {
+    .carousel {
+        position: relative;
+        width: 25%;
+        display: none;
+    }
+    .leftSideBox {
+        max-width: 100%;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .cssbuttons-io-button,
+    .navbar button {
+        margin-top: 2%;
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .ButtonContent {
+        display: flex;
+        flex-direction: column;
+        max-width: 65%;
+        margin: auto;
+        justify-content: center;
+    }
+    .cssbuttons-io-button {
+        margin-top: 2%;
+        font-size: 22px;
+        margin-bottom: 12px;
+    }
+    .mainBox h6 {
+        margin: 17px auto;
+    }
+}
+
+@media only screen and (max-width: 553px) {
+    .ButtonContent {
+        display: flex;
+        flex-direction: column;
+        max-width: 90%;
+        margin: auto;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .mainBox {
+        display: flex;
+        max-width: 100%;
+        margin: auto;
+        margin-top: 6%;
+    }
+}
